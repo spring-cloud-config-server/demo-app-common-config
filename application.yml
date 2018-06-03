@@ -1,0 +1,44 @@
+
+spring.cloud.config.password: demo-app-common_pass
+
+profile-sensitive: demo-app-common-config_none
+
+in-demo-app-common-only: in-demo-app-common-only
+
+in-both-demo-app-common-and-demo-app: demo-app-common
+
+---
+spring:
+  profiles: default
+
+profile-sensitive: demo-app-common-config_default
+
+---
+spring:
+  profiles: development.env
+
+profile-sensitive: demo-app-common-config_development.env
+
+---
+spring:
+  profiles: ut.env
+
+profile-sensitive: demo-app-common-config_ut.env
+
+---
+spring:
+  profiles: it.env
+
+profile-sensitive: demo-app-common-config_it.env
+
+---
+spring:
+  profiles: staging.env
+
+profile-sensitive: demo-app-common-config_staging.env
+
+---
+spring:
+  profiles: production.env
+
+profile-sensitive: demo-app-common-config_production.env
