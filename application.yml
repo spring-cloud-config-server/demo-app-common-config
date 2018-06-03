@@ -7,6 +7,8 @@ in-demo-app-common-only: in-demo-app-common-only
 
 in-both-demo-app-common-and-demo-app: demo-app-common
 
+demo-app-common-label-sensitive: develop
+
 ---
 spring:
   profiles: default
